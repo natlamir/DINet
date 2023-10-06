@@ -1,6 +1,32 @@
 # DINet: Deformation Inpainting Network for Realistic Face Visually Dubbing on High Resolution Video (AAAI2023)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/178c6b3ec0074af7a2dcc9ef26450e75.png)
-[Paper](https://fuxivirtualhuman.github.io/pdf/AAAI2023_FaceDubbing.pdf) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     [demo video](https://www.youtube.com/watch?v=UU344T-9h7M&t=6s)  &nbsp;&nbsp;&nbsp;&nbsp; Supplementary materials
+
+## Windows Install Instructions
+Create new conda environment
+```
+conda create -n dinet python=3.7
+conda activate dinet
+```
+
+Clone repository
+```
+git clone https://github.com/natlamir/DINet.git
+cd DINet
+```
+
+Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+Install torch 1.7.1
+```
+pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+Install tensorflow 1.15.2
+```
+pip install tensorflow==1.15.2
+```
 
 ## Inference
 ##### Download resources (asserts.zip) in [Google drive](https://drive.google.com/drive/folders/1rPtOo9Uuhc59YfFVv4gBmkh0_oG0nCQb?usp=share_link). unzip and put dir in ./.
