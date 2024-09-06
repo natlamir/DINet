@@ -159,7 +159,7 @@ if __name__ == '__main__':
     video_add_audio_path = res_video_path.replace('.mp4', '_add_audio.mp4')
     if os.path.exists(video_add_audio_path):
         os.remove(video_add_audio_path)
-    cmd = 'ffmpeg -i {} -i {} -c:v copy -c:a aac -strict experimental -map 0:v:0 -map 1:a:0 {}'.format(
+    cmd = 'ffmpeg -i "{}" -i "{}" -c:v copy -c:a aac -strict experimental -map 0:v:0 -map 1:a:0 "{}"'.format(
         res_video_path,
         opt.driving_audio_path,
         video_add_audio_path)
